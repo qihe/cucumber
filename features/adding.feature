@@ -1,10 +1,10 @@
-Feature: Adding
-	Scenario Outline: Add two numbers
-		Given the input "<input>"
-		When the calculator is run
-		Then the output should be "<output>"
-	Examples:
-		| input | output |
-		| 2+2 	| 4		 |
-		| 98+1	| 99	 |
-		
+# language : zh-CN
+功能: 加法
+	场景大纲:
+		假如两个数字做加法"<加法表达式>"
+		当计算器运行
+		那么输出应该是 "<结果>"
+		例子:
+		| 加法表达式	| 结果	|
+		| 2+2		| 4		|
+		| 98+1 		| 99	|

@@ -1,12 +1,12 @@
-Given(/^the input "(.*?)"$/) do |input|
+假如 /^两个数字做加法"([^"]*)"$/ do |input|  #"
 	@input = input
 end
 
-When(/^the calculator is run$/) do
+当 /^计算器运行$/ do
 	@output = `ruby calc.rb #{@input}`
-	raise ('Command failed!') unless $?.success?		
+	raise('Error') unless $?.success?	
 end
 
-Then(/^the output should be "(.*?)"$/) do |expect_output|
-	@output.should == expect_output
+那么 /^输出应该是 "([^"]*)"$/ do |output_expectation| #"
+  @output.should == output_expectation
 end
